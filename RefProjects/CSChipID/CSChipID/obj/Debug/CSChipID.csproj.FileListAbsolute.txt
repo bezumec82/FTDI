@@ -1,0 +1,3 @@
+D:\PROJECTS\FTDI\RefProjects\CSChipID\CSChipID\CSChipID\obj\Debug\CSChipID.csprojAssemblyReference.cache
+D:\PROJECTS\FTDI\RefProjects\CSChipID\CSChipID\CSChipID\obj\Debug\CSChipID.MainForm.resources
+D:\PROJECTS\FTDI\RefProjects\CSChipID\CSChipID\CSChipID\obj\Debug\CSChipID.csproj.GenerateResource.cache

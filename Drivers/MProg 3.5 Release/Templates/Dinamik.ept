@@ -1,0 +1,44 @@
+[Basic Details]
+Device Type=4
+VID PID Type=2
+USB VID=FFF0
+USB PID=8004
+[USB Power Options]
+Bus Powered=1
+Self Powered=0
+Max Bus Power=500
+[USB Serial Number Control]
+Prefix=LR
+Use Fixed Serial Number=0
+Fixed Serial Number=12345678
+[USB Remote WakeUp]
+Enable Remote WakeUp=0
+[Windows Plug and Play]
+Enable Plug and Play=1
+[USB String Descriptors]
+Manufacturer=LIRA
+Product=Speaker
+[Programming Options]
+Only Program Blank Devices=0
+[BM Device Specific Options]
+USB Version Number=1
+Disable Serial Number=0
+IO Pin Pull Down in Suspend=0
+[Dual Device Specific Options A]
+RS 232 mode=0
+245 FIFO mode=0
+245 CPU FIFO mode=0
+OPTO Isolate mode=0
+High Current Drive=0
+[Dual Device Specific Options B]
+RS 232 mode=0
+245 FIFO mode=0
+245 CPU FIFO mode=0
+OPTO Isolate mode=0
+High Current Drive=0
+[Dual Device Driver Options A]
+Virtual Com Port Driver=0
+D2XX Driver=0
+[Dual Device Driver Options B]
+Virtual Com Port Driver=0
+D2XX Driver=0

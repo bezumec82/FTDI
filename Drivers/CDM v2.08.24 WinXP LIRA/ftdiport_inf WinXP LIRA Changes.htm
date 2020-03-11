@@ -1,0 +1,1091 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+table {margin: 0; border: 1px solid #a0a0a0; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);}
+td,th {word-break: break-all; font-size: 8pt;padding: 0 3px;}
+tr { vertical-align: top; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey;}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #00ff00; background-color: #000000; }
+.sf3b5 {color: #00ff00; background-color: #ffffff; }
+.sf3b14 {color: #00ff00; background-color: #ffa0a0; }
+.sf3b16 {color: #00ff00; background-color: #f1e2ad; }
+.sf3b18 {color: #00ff00; background-color: #ffaa82; }
+.sf3b19 {color: #00ff00; background-color: #c8816c; }
+.sf6b2 {color: #000000; background-color: #000000; }
+.sf6b5 {color: #000000; background-color: #ffffff; }
+.sf6b14 {color: #000000; background-color: #ffa0a0; }
+.sf6b16 {color: #000000; background-color: #f1e2ad; }
+.sf6b18 {color: #000000; background-color: #ffaa82; }
+.sf6b19 {color: #000000; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #000000; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #000000; }
+.sf8b5 {color: #800080; background-color: #ffffff; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #000000; }
+.sf9b5 {color: #008000; background-color: #ffffff; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #000000; }
+.sf10b5 {color: #ff0000; background-color: #ffffff; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #000000; }
+.sf11b5 {color: #606060; background-color: #ffffff; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #000000; }
+.sf12b5 {color: #800000; background-color: #ffffff; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #000000; }
+.sf13b5 {color: #0080c0; background-color: #ffffff; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #000000; }
+.sf15b5 {color: #000000; background-color: #ffffff; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #000000; }
+.sf17b5 {color: #000000; background-color: #ffffff; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #000000; }
+.sf20b5 {color: #000080; background-color: #ffffff; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #000000; }
+.sf21b5 {color: #0080c0; background-color: #ffffff; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+<thead>
+<tr>
+<th colspan="2" class="title" style="width:50.000000%">Y:\ftdiport.inf</th>
+<th colspan="2" class="title" style="width:50.000000%">Z:\ftdiport.inf</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">; FTDIPORT.INF</span></code></td>
+<td class="ln">1</td><td class="sf3b2"><code><span class="sf3b2">; FTDIPORT.INF</span></code></td>
+</tr>
+<tr>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">; </span></code></td>
+<td class="ln">2</td><td class="sf3b2"><code><span class="sf3b2">; </span></code></td>
+</tr>
+<tr>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">; Copyright © 2000-2012 Future Technology Devices International Limited</span></code></td>
+<td class="ln">3</td><td class="sf3b2"><code><span class="sf3b2">; Copyright © 2000-2012 Future Technology Devices International Limited</span></code></td>
+</tr>
+<tr>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">;</span></code></td>
+<td class="ln">4</td><td class="sf3b2"><code><span class="sf3b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">; USB serial port driver installation file for Windows 2000, XP, Server 2003, Vista, Server 2008,</span></code></td>
+<td class="ln">5</td><td class="sf3b2"><code><span class="sf3b2">; USB serial port driver installation file for Windows 2000, XP, Server 2003, Vista, Server 2008,</span></code></td>
+</tr>
+<tr>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">; Windows 7 and Server 2008 R2 (x86 and x64).</span></code></td>
+<td class="ln">6</td><td class="sf3b2"><code><span class="sf3b2">; Windows 7 and Server 2008 R2 (x86 and x64).</span></code></td>
+</tr>
+<tr>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">; </span></code></td>
+<td class="ln">7</td><td class="sf3b2"><code><span class="sf3b2">; </span></code></td>
+</tr>
+<tr>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">; </span></code></td>
+<td class="ln">8</td><td class="sf3b2"><code><span class="sf3b2">; </span></code></td>
+</tr>
+<tr>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">; THIS SOFTWARE IS PROVIDED BY FUTURE TECHNOLOGY DEVICES INTERNATIONAL LIMITED ``AS IS'' AND ANY EXPRESS </span></code></td>
+<td class="ln">9</td><td class="sf3b2"><code><span class="sf3b2">; THIS SOFTWARE IS PROVIDED BY FUTURE TECHNOLOGY DEVICES INTERNATIONAL LIMITED ``AS IS'' AND ANY EXPRESS </span></code></td>
+</tr>
+<tr>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">; OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span></code></td>
+<td class="ln">10</td><td class="sf3b2"><code><span class="sf3b2">; OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</span></code></td>
+</tr>
+<tr>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">; FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL FUTURE TECHNOLOGY DEVICES INTERNATIONAL LIMITED</span></code></td>
+<td class="ln">11</td><td class="sf3b2"><code><span class="sf3b2">; FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL FUTURE TECHNOLOGY DEVICES INTERNATIONAL LIMITED</span></code></td>
+</tr>
+<tr>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, </span></code></td>
+<td class="ln">12</td><td class="sf3b2"><code><span class="sf3b2">; BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, </span></code></td>
+</tr>
+<tr>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">; BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></code></td>
+<td class="ln">13</td><td class="sf3b2"><code><span class="sf3b2">; BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></code></td>
+</tr>
+<tr>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">; INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span></code></td>
+<td class="ln">14</td><td class="sf3b2"><code><span class="sf3b2">; INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span></code></td>
+</tr>
+<tr>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">; (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF</span></code></td>
+<td class="ln">15</td><td class="sf3b2"><code><span class="sf3b2">; (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF</span></code></td>
+</tr>
+<tr>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">; THE POSSIBILITY OF SUCH DAMAGE. </span></code></td>
+<td class="ln">16</td><td class="sf3b2"><code><span class="sf3b2">; THE POSSIBILITY OF SUCH DAMAGE. </span></code></td>
+</tr>
+<tr>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2"> </span>&nbsp;</code></td>
+<td class="ln">17</td><td class="sf3b2"><code><span class="sf3b2"> </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">; FTDI DRIVERS MAY BE USED ONLY IN CONJUNCTION WITH PRODUCTS BASED ON FTDI PARTS.</span></code></td>
+<td class="ln">18</td><td class="sf3b2"><code><span class="sf3b2">; FTDI DRIVERS MAY BE USED ONLY IN CONJUNCTION WITH PRODUCTS BASED ON FTDI PARTS.</span></code></td>
+</tr>
+<tr>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2"> </span>&nbsp;</code></td>
+<td class="ln">19</td><td class="sf3b2"><code><span class="sf3b2"> </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">; FTDI DRIVERS MAY BE DISTRIBUTED IN ANY FORM AS LONG AS LICENSE INFORMATION IS NOT MODIFIED.</span></code></td>
+<td class="ln">20</td><td class="sf3b2"><code><span class="sf3b2">; FTDI DRIVERS MAY BE DISTRIBUTED IN ANY FORM AS LONG AS LICENSE INFORMATION IS NOT MODIFIED.</span></code></td>
+</tr>
+<tr>
+<td class="ln">21</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">21</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">; IF A CUSTOM VENDOR ID AND/OR PRODUCT ID OR DESCRIPTION STRING ARE USED, IT IS THE RESPONSIBILITY OF</span></code></td>
+<td class="ln">22</td><td class="sf3b2"><code><span class="sf3b2">; IF A CUSTOM VENDOR ID AND/OR PRODUCT ID OR DESCRIPTION STRING ARE USED, IT IS THE RESPONSIBILITY OF</span></code></td>
+</tr>
+<tr>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">; THE PRODUCT MANUFACTURER TO MAINTAIN ANY CHANGES AND SUBSEQUENT WHQL RE-CERTIFICATION AS A RESULT OF</span></code></td>
+<td class="ln">23</td><td class="sf3b2"><code><span class="sf3b2">; THE PRODUCT MANUFACTURER TO MAINTAIN ANY CHANGES AND SUBSEQUENT WHQL RE-CERTIFICATION AS A RESULT OF</span></code></td>
+</tr>
+<tr>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">; MAKING THESE CHANGES.</span></code></td>
+<td class="ln">24</td><td class="sf3b2"><code><span class="sf3b2">; MAKING THESE CHANGES.</span></code></td>
+</tr>
+<tr>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">;</span></code></td>
+<td class="ln">25</td><td class="sf3b2"><code><span class="sf3b2">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">26</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">26</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">27</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">27</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">[Version]</span></code></td>
+<td class="ln">28</td><td class="sf3b2"><code><span class="sf3b2">[Version]</span></code></td>
+</tr>
+<tr>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">Signature="$Windows NT$"</span></code></td>
+<td class="ln">29</td><td class="sf3b2"><code><span class="sf3b2">Signature="$Windows NT$"</span></code></td>
+</tr>
+<tr>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">DriverPackageType=PlugAndPlay</span></code></td>
+<td class="ln">30</td><td class="sf3b2"><code><span class="sf3b2">DriverPackageType=PlugAndPlay</span></code></td>
+</tr>
+<tr>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">DriverPackageDisplayName=%DESC%</span></code></td>
+<td class="ln">31</td><td class="sf3b2"><code><span class="sf3b2">DriverPackageDisplayName=%DESC%</span></code></td>
+</tr>
+<tr>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">Class=Ports</span></code></td>
+<td class="ln">32</td><td class="sf3b2"><code><span class="sf3b2">Class=Ports</span></code></td>
+</tr>
+<tr>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">ClassGUID={4d36e978-e325-11ce-bfc1-0800<wbr>2be10318}</span></code></td>
+<td class="ln">33</td><td class="sf3b2"><code><span class="sf3b2">ClassGUID={4d36e978-e325-11ce-bfc1-0800<wbr>2be10318}</span></code></td>
+</tr>
+<tr>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">Provider=%FTDI%</span></code></td>
+<td class="ln">34</td><td class="sf3b2"><code><span class="sf3b2">Provider=%FTDI%</span></code></td>
+</tr>
+<tr>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">CatalogFile=ftdiport.cat</span></code></td>
+<td class="ln">35</td><td class="sf3b2"><code><span class="sf3b2">CatalogFile=ftdiport.cat</span></code></td>
+</tr>
+<tr>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">DriverVer=04/10/2012,2.08.24</span></code></td>
+<td class="ln">36</td><td class="sf3b2"><code><span class="sf3b2">DriverVer=04/10/2012,2.08.24</span></code></td>
+</tr>
+<tr>
+<td class="ln">37</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">37</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">[SourceDisksNames]</span></code></td>
+<td class="ln">38</td><td class="sf3b2"><code><span class="sf3b2">[SourceDisksNames]</span></code></td>
+</tr>
+<tr>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">1=%DriversDisk%,,,</span></code></td>
+<td class="ln">39</td><td class="sf3b2"><code><span class="sf3b2">1=%DriversDisk%,,,</span></code></td>
+</tr>
+<tr>
+<td class="ln">40</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">40</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">[SourceDisksFiles]</span></code></td>
+<td class="ln">41</td><td class="sf3b2"><code><span class="sf3b2">[SourceDisksFiles]</span></code></td>
+</tr>
+<tr>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">ftser2k.sys=1,i386</span></code></td>
+<td class="ln">42</td><td class="sf3b2"><code><span class="sf3b2">ftser2k.sys=1,i386</span></code></td>
+</tr>
+<tr>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">ftserui2.dll=1,i386</span></code></td>
+<td class="ln">43</td><td class="sf3b2"><code><span class="sf3b2">ftserui2.dll=1,i386</span></code></td>
+</tr>
+<tr>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ftcserco.dll = 1,i386</span></code></td>
+<td class="ln">44</td><td class="sf3b2"><code><span class="sf3b2">ftcserco.dll = 1,i386</span></code></td>
+</tr>
+<tr>
+<td class="ln">45</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">45</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">[SourceDisksFiles.amd64]</span></code></td>
+<td class="ln">46</td><td class="sf3b2"><code><span class="sf3b2">[SourceDisksFiles.amd64]</span></code></td>
+</tr>
+<tr>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ftser2k.sys=1,amd64</span></code></td>
+<td class="ln">47</td><td class="sf3b2"><code><span class="sf3b2">ftser2k.sys=1,amd64</span></code></td>
+</tr>
+<tr>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ftserui2.dll=1,amd64</span></code></td>
+<td class="ln">48</td><td class="sf3b2"><code><span class="sf3b2">ftserui2.dll=1,amd64</span></code></td>
+</tr>
+<tr>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ftcserco.dll = 1,amd64</span></code></td>
+<td class="ln">49</td><td class="sf3b2"><code><span class="sf3b2">ftcserco.dll = 1,amd64</span></code></td>
+</tr>
+<tr>
+<td class="ln">50</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">50</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">[DestinationDirs]</span></code></td>
+<td class="ln">51</td><td class="sf3b2"><code><span class="sf3b2">[DestinationDirs]</span></code></td>
+</tr>
+<tr>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">FtdiPort.NT.Copy=10,system32\drivers</span></code></td>
+<td class="ln">52</td><td class="sf3b2"><code><span class="sf3b2">FtdiPort.NT.Copy=10,system32\drivers</span></code></td>
+</tr>
+<tr>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">FtdiPort.NT.CopyUI=10,system32</span></code></td>
+<td class="ln">53</td><td class="sf3b2"><code><span class="sf3b2">FtdiPort.NT.CopyUI=10,system32</span></code></td>
+</tr>
+<tr>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">FtdiPort.NT.CopyCoInst=10,system32</span></code></td>
+<td class="ln">54</td><td class="sf3b2"><code><span class="sf3b2">FtdiPort.NT.CopyCoInst=10,system32</span></code></td>
+</tr>
+<tr>
+<td class="ln">55</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">55</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">[ControlFlags]</span></code></td>
+<td class="ln">56</td><td class="sf3b2"><code><span class="sf3b2">[ControlFlags]</span></code></td>
+</tr>
+<tr>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">ExcludeFromSelect=*</span></code></td>
+<td class="ln">57</td><td class="sf3b2"><code><span class="sf3b2">ExcludeFromSelect=*</span></code></td>
+</tr>
+<tr>
+<td class="ln">58</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">58</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">[Manufacturer]</span></code></td>
+<td class="ln">59</td><td class="sf3b2"><code><span class="sf3b2">[Manufacturer]</span></code></td>
+</tr>
+<tr>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">%FTDI%=FtdiHw,NTamd64</span></code></td>
+<td class="ln">60</td><td class="sf3b2"><code><span class="sf3b2">%FTDI%=FtdiHw,NTamd64</span></code></td>
+</tr>
+<tr>
+<td class="ln">61</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">61</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">[FtdiHw]</span></code></td>
+<td class="ln">62</td><td class="sf3b2"><code><span class="sf3b2">[FtdiHw]</span></code></td>
+</tr>
+<tr>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6001.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6001</span></code></td>
+<td class="ln">63</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6001.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6001</span></code></td>
+</tr>
+<tr>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6010.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6010</span></code></td>
+<td class="ln">64</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6010.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6010</span></code></td>
+</tr>
+<tr>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6011.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6011</span></code></td>
+<td class="ln">65</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6011.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6011</span></code></td>
+</tr>
+<tr>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6014.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6014</span></code></td>
+<td class="ln">66</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6014.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6014</span></code></td>
+</tr>
+<tr>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6015.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6015</span></code></td>
+<td class="ln">67</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6015.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6015</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">68</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">69</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">70</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">71</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;PTT pedal interface VID=FFF0 PID=8003</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">72</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8003.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8003</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">73</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Speaker VID=FFF0 PID=8004</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">74</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8004.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8004</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">75</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Microphone VID=FFF0 PID=8008</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">76</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8008.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8008</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">77</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Headset VID=FFF0 PID=8009</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">78</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8009.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8009</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">79</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;GGS Control VID=FFF0 PID=800A</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">80</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800A.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_800A</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">81</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Radio Control VID=FFF0 PID=800B</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">82</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800B.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_800B</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">83</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Line interface VID=FFF0 PID=800D</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">84</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800D.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_800D</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">85</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Table microphone VID=FFF0 PID=800E</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">86</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800E.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_800E</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">87</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Handset VID=FFF0 PID=800F</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">88</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800F.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_800F</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">89</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Aux Control B VID=FFF0 PID=8020</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">90</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8020.DeviceDesc%=FtdiPort<wbr>.NT,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8020</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">91</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">92</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">93</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">68</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">94</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">69</td><td class="sf3b2"><code><span class="sf3b2">[FtdiHw.NTamd64]</span></code></td>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">[FtdiHw.NTamd64]</span></code></td>
+</tr>
+<tr>
+<td class="ln">70</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6001.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>001</span></code></td>
+<td class="ln">96</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6001.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>001</span></code></td>
+</tr>
+<tr>
+<td class="ln">71</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6010.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>010</span></code></td>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6010.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>010</span></code></td>
+</tr>
+<tr>
+<td class="ln">72</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6011.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>011</span></code></td>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6011.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>011</span></code></td>
+</tr>
+<tr>
+<td class="ln">73</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6014.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>014</span></code></td>
+<td class="ln">99</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6014.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>014</span></code></td>
+</tr>
+<tr>
+<td class="ln">74</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6015.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>015</span></code></td>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">%VID_0403&amp;PID_6015.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_0403&amp;PID_6<wbr>015</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">101</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">102</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">103</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">104</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;PTT pedal interface VID=FFF0 PID=8003</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">105</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8003.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>003</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">106</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Speaker VID=FFF0 PID=8004</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">107</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8004.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>004</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">108</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Microphone VID=FFF0 PID=8008</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">109</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8008.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>008</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">110</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Headset VID=FFF0 PID=8009</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">111</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8009.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>009</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">112</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;GGS Control VID=FFF0 PID=800A</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">113</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800A.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>00A</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">114</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Radio Control VID=FFF0 PID=800B</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">115</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800B.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>00B</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">116</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Line interface VID=FFF0 PID=800D</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">117</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800D.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>00D</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">118</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Table microphone VID=FFF0 PID=800E</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">119</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800E.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>00E</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">120</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Handset VID=FFF0 PID=800F</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">121</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_800F.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>00F</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">122</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Aux Control B VID=FFF0 PID=8020</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">123</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">%VID_FFF0&amp;PID_8020.DeviceDesc%=FtdiPort<wbr>.NTamd64,FTDIBUS\COMPORT&amp;VID_FFF0&amp;PID_8<wbr>020</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">124</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">125</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">126</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">75</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">127</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">76</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.AddService]</span></code></td>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.AddService]</span></code></td>
+</tr>
+<tr>
+<td class="ln">77</td><td class="sf3b2"><code><span class="sf3b2">DisplayName &nbsp; &nbsp;= %SvcDesc%</span></code></td>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">DisplayName &nbsp; &nbsp;= %SvcDesc%</span></code></td>
+</tr>
+<tr>
+<td class="ln">78</td><td class="sf3b2"><code><span class="sf3b2">ServiceType &nbsp; &nbsp;= 1 ; SERVICE_KERNEL_DRIVER</span></code></td>
+<td class="ln">130</td><td class="sf3b2"><code><span class="sf3b2">ServiceType &nbsp; &nbsp;= 1 ; SERVICE_KERNEL_DRIVER</span></code></td>
+</tr>
+<tr>
+<td class="ln">79</td><td class="sf3b2"><code><span class="sf3b2">StartType &nbsp; &nbsp; &nbsp;= 3 ; SERVICE_DEMAND_START</span></code></td>
+<td class="ln">131</td><td class="sf3b2"><code><span class="sf3b2">StartType &nbsp; &nbsp; &nbsp;= 3 ; SERVICE_DEMAND_START</span></code></td>
+</tr>
+<tr>
+<td class="ln">80</td><td class="sf3b2"><code><span class="sf3b2">ErrorControl &nbsp; = 1 ; SERVICE_ERROR_NORMAL</span></code></td>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">ErrorControl &nbsp; = 1 ; SERVICE_ERROR_NORMAL</span></code></td>
+</tr>
+<tr>
+<td class="ln">81</td><td class="sf3b2"><code><span class="sf3b2">ServiceBinary &nbsp;= %10%\system32\drivers\ftser2k.sys</span></code></td>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">ServiceBinary &nbsp;= %10%\system32\drivers\ftser2k.sys</span></code></td>
+</tr>
+<tr>
+<td class="ln">82</td><td class="sf3b2"><code><span class="sf3b2">LoadOrderGroup = Base</span></code></td>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">LoadOrderGroup = Base</span></code></td>
+</tr>
+<tr>
+<td class="ln">83</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">135</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">84</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">136</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">85</td><td class="sf3b2"><code><span class="sf3b2">; -------------- Serenum Driver install section</span></code></td>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">; -------------- Serenum Driver install section</span></code></td>
+</tr>
+<tr>
+<td class="ln">86</td><td class="sf3b2"><code><span class="sf3b2">[SerEnum_AddService]</span></code></td>
+<td class="ln">138</td><td class="sf3b2"><code><span class="sf3b2">[SerEnum_AddService]</span></code></td>
+</tr>
+<tr>
+<td class="ln">87</td><td class="sf3b2"><code><span class="sf3b2">DisplayName &nbsp; &nbsp;= %SerEnum.SvcDesc%</span></code></td>
+<td class="ln">139</td><td class="sf3b2"><code><span class="sf3b2">DisplayName &nbsp; &nbsp;= %SerEnum.SvcDesc%</span></code></td>
+</tr>
+<tr>
+<td class="ln">88</td><td class="sf3b2"><code><span class="sf3b2">ServiceType &nbsp; &nbsp;= 1 ; SERVICE_KERNEL_DRIVER</span></code></td>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">ServiceType &nbsp; &nbsp;= 1 ; SERVICE_KERNEL_DRIVER</span></code></td>
+</tr>
+<tr>
+<td class="ln">89</td><td class="sf3b2"><code><span class="sf3b2">StartType &nbsp; &nbsp; &nbsp;= 3 ; SERVICE_DEMAND_START</span></code></td>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">StartType &nbsp; &nbsp; &nbsp;= 3 ; SERVICE_DEMAND_START</span></code></td>
+</tr>
+<tr>
+<td class="ln">90</td><td class="sf3b2"><code><span class="sf3b2">ErrorControl &nbsp; = 1 ; SERVICE_ERROR_NORMAL</span></code></td>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">ErrorControl &nbsp; = 1 ; SERVICE_ERROR_NORMAL</span></code></td>
+</tr>
+<tr>
+<td class="ln">91</td><td class="sf3b2"><code><span class="sf3b2">ServiceBinary &nbsp;= %12%\serenum.sys</span></code></td>
+<td class="ln">143</td><td class="sf3b2"><code><span class="sf3b2">ServiceBinary &nbsp;= %12%\serenum.sys</span></code></td>
+</tr>
+<tr>
+<td class="ln">92</td><td class="sf3b2"><code><span class="sf3b2">LoadOrderGroup = PNP Filter</span></code></td>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">LoadOrderGroup = PNP Filter</span></code></td>
+</tr>
+<tr>
+<td class="ln">93</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">145</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">94</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.AddReg]</span></code></td>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.AddReg]</span></code></td>
+</tr>
+<tr>
+<td class="ln">95</td><td class="sf3b2"><code><span class="sf3b2">HKR,,EnumPropPages32,,"ftserui2.dll,Ser<wbr>ialPortPropPageProvider"</span></code></td>
+<td class="ln">147</td><td class="sf3b2"><code><span class="sf3b2">HKR,,EnumPropPages32,,"ftserui2.dll,Ser<wbr>ialPortPropPageProvider"</span></code></td>
+</tr>
+<tr>
+<td class="ln">96</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">148</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">97</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.Copy]</span></code></td>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.Copy]</span></code></td>
+</tr>
+<tr>
+<td class="ln">98</td><td class="sf3b2"><code><span class="sf3b2">ftser2k.sys</span></code></td>
+<td class="ln">150</td><td class="sf3b2"><code><span class="sf3b2">ftser2k.sys</span></code></td>
+</tr>
+<tr>
+<td class="ln">99</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">151</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">100</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CopyUI]</span></code></td>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CopyUI]</span></code></td>
+</tr>
+<tr>
+<td class="ln">101</td><td class="sf3b2"><code><span class="sf3b2">ftserui2.dll</span></code></td>
+<td class="ln">153</td><td class="sf3b2"><code><span class="sf3b2">ftserui2.dll</span></code></td>
+</tr>
+<tr>
+<td class="ln">102</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">154</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">103</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CopyCoInst]</span></code></td>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CopyCoInst]</span></code></td>
+</tr>
+<tr>
+<td class="ln">104</td><td class="sf3b2"><code><span class="sf3b2">ftcserco.dll</span></code></td>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">ftcserco.dll</span></code></td>
+</tr>
+<tr>
+<td class="ln">105</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">157</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">106</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT]</span></code></td>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT]</span></code></td>
+</tr>
+<tr>
+<td class="ln">107</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.Copy,FtdiPort.NT.<wbr>CopyUI</span></code></td>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.Copy,FtdiPort.NT.<wbr>CopyUI</span></code></td>
+</tr>
+<tr>
+<td class="ln">108</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.AddReg</span></code></td>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.AddReg</span></code></td>
+</tr>
+<tr>
+<td class="ln">109</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">161</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">110</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64]</span></code></td>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64]</span></code></td>
+</tr>
+<tr>
+<td class="ln">111</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.Copy,FtdiPort.NT.<wbr>CopyUI</span></code></td>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.Copy,FtdiPort.NT.<wbr>CopyUI</span></code></td>
+</tr>
+<tr>
+<td class="ln">112</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.AddReg</span></code></td>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.AddReg</span></code></td>
+</tr>
+<tr>
+<td class="ln">113</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">165</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">114</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.HW]</span></code></td>
+<td class="ln">166</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.HW]</span></code></td>
+</tr>
+<tr>
+<td class="ln">115</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.HW.AddReg</span></code></td>
+<td class="ln">167</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.HW.AddReg</span></code></td>
+</tr>
+<tr>
+<td class="ln">116</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">168</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">117</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64.HW]</span></code></td>
+<td class="ln">169</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64.HW]</span></code></td>
+</tr>
+<tr>
+<td class="ln">118</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.HW.AddReg</span></code></td>
+<td class="ln">170</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.HW.AddReg</span></code></td>
+</tr>
+<tr>
+<td class="ln">119</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">171</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">120</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">172</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">121</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.Services]</span></code></td>
+<td class="ln">173</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.Services]</span></code></td>
+</tr>
+<tr>
+<td class="ln">122</td><td class="sf3b2"><code><span class="sf3b2">AddService = FTSER2K, 0x00000002, FtdiPort.NT.AddService</span></code></td>
+<td class="ln">174</td><td class="sf3b2"><code><span class="sf3b2">AddService = FTSER2K, 0x00000002, FtdiPort.NT.AddService</span></code></td>
+</tr>
+<tr>
+<td class="ln">123</td><td class="sf3b2"><code><span class="sf3b2">AddService = Serenum,,SerEnum_AddService</span></code></td>
+<td class="ln">175</td><td class="sf3b2"><code><span class="sf3b2">AddService = Serenum,,SerEnum_AddService</span></code></td>
+</tr>
+<tr>
+<td class="ln">124</td><td class="sf3b2"><code><span class="sf3b2">DelService = FTSERIAL</span></code></td>
+<td class="ln">176</td><td class="sf3b2"><code><span class="sf3b2">DelService = FTSERIAL</span></code></td>
+</tr>
+<tr>
+<td class="ln">125</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">177</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">126</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64.Services]</span></code></td>
+<td class="ln">178</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64.Services]</span></code></td>
+</tr>
+<tr>
+<td class="ln">127</td><td class="sf3b2"><code><span class="sf3b2">AddService = FTSER2K, 0x00000002, FtdiPort.NT.AddService</span></code></td>
+<td class="ln">179</td><td class="sf3b2"><code><span class="sf3b2">AddService = FTSER2K, 0x00000002, FtdiPort.NT.AddService</span></code></td>
+</tr>
+<tr>
+<td class="ln">128</td><td class="sf3b2"><code><span class="sf3b2">AddService = Serenum,,SerEnum_AddService</span></code></td>
+<td class="ln">180</td><td class="sf3b2"><code><span class="sf3b2">AddService = Serenum,,SerEnum_AddService</span></code></td>
+</tr>
+<tr>
+<td class="ln">129</td><td class="sf3b2"><code><span class="sf3b2">DelService = FTSERIAL</span></code></td>
+<td class="ln">181</td><td class="sf3b2"><code><span class="sf3b2">DelService = FTSERIAL</span></code></td>
+</tr>
+<tr>
+<td class="ln">130</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">182</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">131</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">183</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">132</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.HW.AddReg]</span></code></td>
+<td class="ln">184</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.HW.AddReg]</span></code></td>
+</tr>
+<tr>
+<td class="ln">133</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"UpperFilters",0x00010000,"serenum<wbr>"</span></code></td>
+<td class="ln">185</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"UpperFilters",0x00010000,"serenum<wbr>"</span></code></td>
+</tr>
+<tr>
+<td class="ln">134</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"ConfigData",1,11,00,3F,3F,10,27,0<wbr>0,00,88,13,00,00,C4,09,00,00,E2,04,00,0<wbr>0,71,02,00,00,38,41,00,00,9C,80,00,00,4<wbr>E,C0,00,00,34,00,00,00,1A,00,00,00,0D,0<wbr>0,00,00,06,40,00,00,03,80,00,00,00,00,0<wbr>0,00,D0,80,00,00</span></code></td>
+<td class="ln">186</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"ConfigData",1,11,00,3F,3F,10,27,0<wbr>0,00,88,13,00,00,C4,09,00,00,E2,04,00,0<wbr>0,71,02,00,00,38,41,00,00,9C,80,00,00,4<wbr>E,C0,00,00,34,00,00,00,1A,00,00,00,0D,0<wbr>0,00,00,06,40,00,00,03,80,00,00,00,00,0<wbr>0,00,D0,80,00,00</span></code></td>
+</tr>
+<tr>
+<td class="ln">135</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"MinReadTimeout",0x00010001,0</span></code></td>
+<td class="ln">187</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"MinReadTimeout",0x00010001,0</span></code></td>
+</tr>
+<tr>
+<td class="ln">136</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"MinWriteTimeout",0x00010001,0</span></code></td>
+<td class="ln">188</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"MinWriteTimeout",0x00010001,0</span></code></td>
+</tr>
+<tr>
+<td class="ln">137</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"LatencyTimer",0x00010001,16</span></code></td>
+<td class="ln">189</td><td class="sf3b2"><code><span class="sf3b2">HKR,,"LatencyTimer",0x00010001,16</span></code></td>
+</tr>
+<tr>
+<td class="ln">138</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">190</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">139</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">191</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">140</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CoInstallers]</span></code></td>
+<td class="ln">192</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CoInstallers]</span></code></td>
+</tr>
+<tr>
+<td class="ln">141</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.CoInstallers.AddReg</span></code></td>
+<td class="ln">193</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.CoInstallers.AddReg</span></code></td>
+</tr>
+<tr>
+<td class="ln">142</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.CopyCoInst</span></code></td>
+<td class="ln">194</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.CopyCoInst</span></code></td>
+</tr>
+<tr>
+<td class="ln">143</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">195</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">144</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64.CoInstallers]</span></code></td>
+<td class="ln">196</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NTamd64.CoInstallers]</span></code></td>
+</tr>
+<tr>
+<td class="ln">145</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.CoInstallers.AddReg</span></code></td>
+<td class="ln">197</td><td class="sf3b2"><code><span class="sf3b2">AddReg=FtdiPort.NT.CoInstallers.AddReg</span></code></td>
+</tr>
+<tr>
+<td class="ln">146</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.CopyCoInst</span></code></td>
+<td class="ln">198</td><td class="sf3b2"><code><span class="sf3b2">CopyFiles=FtdiPort.NT.CopyCoInst</span></code></td>
+</tr>
+<tr>
+<td class="ln">147</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">199</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">148</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CoInstallers.AddReg]</span></code></td>
+<td class="ln">200</td><td class="sf3b2"><code><span class="sf3b2">[FtdiPort.NT.CoInstallers.AddReg]</span></code></td>
+</tr>
+<tr>
+<td class="ln">149</td><td class="sf3b2"><code><span class="sf3b2">HKR,,CoInstallers32,0x00010000,"ftcserc<wbr>o.Dll,FTCSERCoInstaller"</span></code></td>
+<td class="ln">201</td><td class="sf3b2"><code><span class="sf3b2">HKR,,CoInstallers32,0x00010000,"ftcserc<wbr>o.Dll,FTCSERCoInstaller"</span></code></td>
+</tr>
+<tr>
+<td class="ln">150</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">202</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">151</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">203</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">152</td><td class="sf3b2"><code><span class="sf3b2">;--------------------------------------<wbr>-------------------------;</span></code></td>
+<td class="ln">204</td><td class="sf3b2"><code><span class="sf3b2">;--------------------------------------<wbr>-------------------------;</span></code></td>
+</tr>
+<tr>
+<td class="ln">153</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">205</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">154</td><td class="sf3b2"><code><span class="sf3b2">[Strings]</span></code></td>
+<td class="ln">206</td><td class="sf3b2"><code><span class="sf3b2">[Strings]</span></code></td>
+</tr>
+<tr>
+<td class="ln">155</td><td class="sf3b2"><code><span class="sf3b2">FTDI="FTDI"</span></code></td>
+<td class="ln">207</td><td class="sf3b2"><code><span class="sf3b2">FTDI="FTDI"</span></code></td>
+</tr>
+<tr>
+<td class="ln">156</td><td class="sf3b2"><code><span class="sf3b2">DESC="CDM Driver Package - VCP Driver"</span></code></td>
+<td class="ln">208</td><td class="sf3b2"><code><span class="sf3b2">DESC="CDM Driver Package - VCP Driver"</span></code></td>
+</tr>
+<tr>
+<td class="ln">157</td><td class="sf3b2"><code><span class="sf3b2">DriversDisk="FTDI USB Drivers Disk"</span></code></td>
+<td class="ln">209</td><td class="sf3b2"><code><span class="sf3b2">DriversDisk="FTDI USB Drivers Disk"</span></code></td>
+</tr>
+<tr>
+<td class="ln">158</td><td class="sf3b2"><code><span class="sf3b2">PortsClassName = "Ports (COM &amp; LPT)"</span></code></td>
+<td class="ln">210</td><td class="sf3b2"><code><span class="sf3b2">PortsClassName = "Ports (COM &amp; LPT)"</span></code></td>
+</tr>
+<tr>
+<td class="ln">159</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6001.DeviceDesc="USB Serial Port"</span></code></td>
+<td class="ln">211</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6001.DeviceDesc="USB Serial Port"</span></code></td>
+</tr>
+<tr>
+<td class="ln">160</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6010.DeviceDesc="USB Serial Port"</span></code></td>
+<td class="ln">212</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6010.DeviceDesc="USB Serial Port"</span></code></td>
+</tr>
+<tr>
+<td class="ln">161</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6011.DeviceDesc="USB Serial Port"</span></code></td>
+<td class="ln">213</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6011.DeviceDesc="USB Serial Port"</span></code></td>
+</tr>
+<tr>
+<td class="ln">162</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6014.DeviceDesc="USB Serial Port"</span></code></td>
+<td class="ln">214</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6014.DeviceDesc="USB Serial Port"</span></code></td>
+</tr>
+<tr>
+<td class="ln">163</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6015.DeviceDesc="USB Serial Port"</span></code></td>
+<td class="ln">215</td><td class="sf3b2"><code><span class="sf3b2">VID_0403&amp;PID_6015.DeviceDesc="USB Serial Port"</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d3" href="#d3">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">216</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">217</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">218</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">219</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;PTT pedal interface VID=FFF0 PID=8003</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">220</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_8003.DeviceDesc="PTT pedal interface"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">221</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Speaker VID=FFF0 PID=8004</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">222</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_8004.DeviceDesc="Speaker"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">223</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Microphone VID=FFF0 PID=8008</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">224</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_8008.DeviceDesc="Microphon<wbr>e"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">225</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Headset VID=FFF0 PID=8009</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">226</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_8009.DeviceDesc="Headset"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">227</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;GGS Control VID=FFF0 PID=800A</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">228</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_800A.DeviceDesc="GGS Control"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">229</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Radio Control VID=FFF0 PID=800B</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">230</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_800B.DeviceDesc="Radio Control"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">231</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Line interface VID=FFF0 PID=800D</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">232</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_800D.DeviceDesc="Line interface"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">233</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Table microphone VID=FFF0 PID=800E</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">234</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_800E.DeviceDesc="Table microphone"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">235</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Handset VID=FFF0 PID=800F</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">236</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_800F.DeviceDesc="Handset"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">237</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;Aux Control B VID=FFF0 PID=8020</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">238</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">VID_FFF0&amp;PID_8020.DeviceDesc="Aux Control B"</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">239</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">240</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln">241</td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; ">;</span></code></td>
+</tr>
+<tr>
+<td class="ln">164</td><td class="sf3b2"><code><span class="sf3b2">SvcDesc="USB Serial Port Driver"</span></code></td>
+<td class="ln">242</td><td class="sf3b2"><code><span class="sf3b2">SvcDesc="USB Serial Port Driver"</span></code></td>
+</tr>
+<tr>
+<td class="ln">165</td><td class="sf3b2"><code><span class="sf3b2">SerEnum.SvcDesc="Serenum Filter Driver"</span></code></td>
+<td class="ln">243</td><td class="sf3b2"><code><span class="sf3b2">SerEnum.SvcDesc="Serenum Filter Driver"</span></code></td>
+</tr>
+<tr>
+<td class="ln">166</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">244</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">167</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">245</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln">168</td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln">246</td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

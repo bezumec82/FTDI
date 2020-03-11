@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ChipID - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x809 /fo"Debug/ChipID.res" /d "_DEBUG" "C:\Development\Windows\Client_Server\Dll\Samples\Samples\C++\Win32\ChipID\ChipID.rc"" 
+Creating temporary file "C:\DOCUME~1\sturner\LOCALS~1\Temp\RSP168.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/ChipID.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Development\Windows\Client_Server\Dll\Samples\Samples\C++\Win32\ChipID\ChipID.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\sturner\LOCALS~1\Temp\RSP168.tmp" 
+Creating temporary file "C:\DOCUME~1\sturner\LOCALS~1\Temp\RSP169.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/ChipID.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Development\Windows\Client_Server\Dll\Samples\Samples\C++\Win32\ChipID\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\sturner\LOCALS~1\Temp\RSP169.tmp" 
+Creating temporary file "C:\DOCUME~1\sturner\LOCALS~1\Temp\RSP16A.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib FTChipID.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/ChipID.pdb" /debug /machine:I386 /out:"Debug/ChipID.exe" /pdbtype:sept 
+".\Debug\ChipID.obj"
+".\Debug\StdAfx.obj"
+".\Debug\ChipID.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\sturner\LOCALS~1\Temp\RSP16A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChipID.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ChipID.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
