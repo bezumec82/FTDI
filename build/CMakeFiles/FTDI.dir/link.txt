@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\FTDI.dir/objects.a
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\FTDI.dir/objects.a @CMakeFiles\FTDI.dir\objects1.rsp
-C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  -g -pthread -std=c++17 -O0 -g   -Wl,--whole-archive CMakeFiles\FTDI.dir/objects.a -Wl,--no-whole-archive  -o ..\out\FTDI.exe -Wl,--out-implib,..\out\libFTDI.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\FTDI.dir\linklibs.rsp

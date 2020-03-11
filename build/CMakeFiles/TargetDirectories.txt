@@ -1,3 +1,0 @@
-D:/PROJECTS/FTDI/build/CMakeFiles/edit_cache.dir
-D:/PROJECTS/FTDI/build/CMakeFiles/FTDI.dir
-D:/PROJECTS/FTDI/build/CMakeFiles/rebuild_cache.dir

@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/PROJECTS/FTDI/build",
-  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-P\\mingw64\\bin\\G__~1.EXE   @CMakeFiles/FTDI.dir/includes_CXX.rsp  -g -pthread -std=c++17 -O0 -g   -o CMakeFiles\\FTDI.dir\\src\\main.cpp.obj -c D:\\PROJECTS\\FTDI\\src\\main.cpp",
-  "file": "D:/PROJECTS/FTDI/src/main.cpp"
-}
-]
